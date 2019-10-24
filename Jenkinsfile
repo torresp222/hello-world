@@ -8,9 +8,6 @@ pipeline {
             steps {
                 script {
                     app = docker.build("torresp222/hello-world")
-                    app.inside {
-                        sh 'echo $(curl localhost:80)'
-                    }
                 }
             }
         }
