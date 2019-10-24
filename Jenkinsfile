@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                archiveArtifacts artifacts: 'dist/hello-world.zip'
+                archiveArtifacts artifacts: '/home/ansible/hello-world.zip'
             }
         }
         stage('Build Docker Image') {
