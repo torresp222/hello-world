@@ -2,4 +2,4 @@ FROM httpd
 WORKDIR /var/www/html/
 COPY index.html /var/www/html/index.html
 COPY . .
-EXPOSE 81
+EXPOSE 80:81
