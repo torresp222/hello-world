@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
-            steps {
-                archiveArtifacts artifacts: '/home/ansible/hello-world.zip'
-            }
-        }
         stage('Build Docker Image') {
             when {
                 branch 'master'
