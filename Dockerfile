@@ -1,5 +1,5 @@
 FROM httpd
-WORKDIR /var/www/html/
-COPY index.html /var/www/html/index.html
+WORKDIR /usr/local/apache2/htdocs/
+COPY index.html /usr/local/apache2/htdocs/index.html
 COPY . .
 EXPOSE 80:81
