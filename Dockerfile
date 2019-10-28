@@ -2,6 +2,5 @@ FROM httpd:2.4
 WORKDIR /var/www/html/
 COPY ./index.html/ /var/www/html/
 COPY . .
-RUN cp index.html /usr/local/htdocs/
-RUN mv styles.css /usr/local/htdocs/
+COPY /var/www/html/index.html /usr/local/apache2/htdocs/
 EXPOSE 80:81
