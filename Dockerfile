@@ -1,3 +1,4 @@
 FROM httpd:2.4
-COPY ./index.html/ /usr/local/apache2/htdocs/
+WORKDIR /var/www/html/
+COPY ./index.html/ /var/www/html/
 EXPOSE 80:81
